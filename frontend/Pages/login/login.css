@@ -1,0 +1,75 @@
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.login-container {
+    margin: auto;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.login-name-input {
+    width: 30rem;
+    height: 5.6rem;
+
+    border: solid black 3px;
+    border-radius: 1.5rem;
+
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.login-name-button {
+    align-self: center;
+
+    width: 13rem;
+    height: 4.3rem;
+ 
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+
+    cursor: pointer;
+    font-size: 24pt;
+}
+
+.login-input-holder{
+    position: relative;
+    display: flex;
+
+    box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    text-align: left;
+}
+
+.login-input-placeholder{
+    position: absolute;
+    z-index: 1;
+
+    transform: scale(0.75) translateY(-39px);
+    top: 3px;
+    left: -13px;
+
+    width: auto;
+
+    box-sizing: border-box;
+    background-color: white;
+
+    font-size: 30pt;
+    font-family: 'Love Ya Like A Sister', cursive;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    padding: 0 8px;
+}

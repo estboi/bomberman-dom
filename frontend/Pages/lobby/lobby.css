@@ -1,0 +1,188 @@
+.lobby-page {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hinters {
+    padding: 0 5.5rem 2.5rem;
+    margin: 0;
+
+    font-size: 20pt;
+    font-family: 'Love Ya Like A Sister', cursive;
+    text-align: center;
+}
+
+.page-down {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    padding: 0 5.5rem;
+}
+
+@media (max-width: 1400px) {
+    .page-down{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timer-controls-container{
+        order: 1;
+    }
+
+    .chat-players-container{
+        order: 2;
+    }
+}
+
+.chat-players-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.timer-controls-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lobby-container {
+    width: 100%;
+}
+
+.players-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.timer-placeholder {
+    position: absolute;
+    z-index: 1;
+
+    transform: scale(0.75) translateY(-39px);
+    top: 3px;
+    left: 17px;
+
+    width: auto;
+
+    box-sizing: border-box;
+    background-color: white;
+
+    font-size: 30pt;
+    font-family: 'Love Ya Like A Sister', cursive;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    padding: 0 8px;
+}
+
+.timer-holder{
+    width: 35.3rem;
+    height: 7.3rem;
+
+    border: solid black 3px;
+    border-radius: 20px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    text-align: left;
+}
+
+.timer-placeholder{
+    left: -10px;
+}
+
+.timer-container{
+    color: #B70505;
+
+    font-size: 4rem;
+}
+
+.controls-container, .down-holder{
+    display: flex;
+}
+
+.controls-container{
+    gap: 1.5rem;
+    padding: 6.6rem 0;
+}
+
+.down-holder{
+    gap: 0.3rem;
+}
+
+.letters, .arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.letters, .arrows, .space{
+    gap: 0.4rem;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3.3rem;
+    height: 3.2rem;
+
+    font-size: 20pt;
+}
+
+.box, .space-holder{
+    border: solid black 3px;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.space-holder{
+    width: 10.8rem;
+    height: 3.2rem;
+
+    font-size: 18pt;
+}
+
+.move-desc{
+    padding-top: 1rem;
+
+    font-size: 17pt;
+    /* font-family: 'Love Ya Like A Sister', cursive; */
+}
+
+.arrowleft{
+    transform: rotate(-90deg);
+}
+
+.arrowdown{
+    transform: rotate(180deg);
+}
+
+.arrowright{
+    transform: rotate(90deg);
+}

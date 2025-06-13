@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+
+    font-size: 96pt;
+    text-transform: uppercase;
+
+    padding: 1.5rem 3.3rem 0;
+}
+
+.header-logo-desc {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.header-logo {
+    width: 100px;
+    height: 120px;
+
+    transform: rotate(-66deg);
+
+    padding: 0.5rem 0;
+}

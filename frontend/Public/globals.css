@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Love+Ya+Like+A+Sister&display=swap');
+
+body{
+    font-family: 'Didact Gothic', sans-serif;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    color: black;
+}
+
+a, button, input {
+    transition: none;
+    outline: none;
+    -webkit-appearance: none;
+}

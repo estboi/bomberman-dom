@@ -1,0 +1,155 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-holder {
+    width: 24rem;
+    height: 30rem;
+
+    border: solid black 3px;
+    border-radius: 24px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    text-align: left;
+
+    margin-bottom: 1.6rem;
+    padding: 2rem 1rem;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.scroller {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    max-height: 30rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE/Edge */
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.chat-placeholder {
+    position: absolute;
+    z-index: 1;
+
+    transform: scale(0.75) translateY(-39px);
+    top: 3px;
+    left: 17px;
+
+    width: auto;
+
+    box-sizing: border-box;
+    background-color: white;
+
+    font-size: 30pt;
+    font-family: 'Love Ya Like A Sister', cursive;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    padding: 0 8px;
+}
+
+.chat-form {
+    display: flex;
+
+    gap: 1rem;
+}
+
+.chat-input {
+    width: 100%;
+    /* width: 17.5rem; */
+    /* height: 3.5rem; */
+
+    border: solid black 3px;
+    border-radius: 20px;
+    font-size: 15pt;
+
+    padding: 1rem 1.2rem;
+}
+
+.chat-input::placeholder {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 15pt;
+}
+
+.chat-submit-message {
+    /* width: 8rem; */
+    border-radius: 20px;
+
+    background-color: black;
+    color: white;
+
+    font-size: 20pt;
+
+    padding: 0 1.5rem;
+}
+
+.messages-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.6rem;
+    overflow-y: auto;
+}
+
+.message-player-11 {
+    max-width: 22rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 20pt;
+    padding: 0.5rem 1rem;
+    background-color: rgb(59, 59, 150);
+}
+
+.message-player-12 {
+    max-width: 22rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 20pt;
+    padding: 0.5rem 1rem;
+    background-color: rgb(187, 187, 30);
+
+}
+
+.message-player-13 {
+    max-width: 22rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 20pt;
+    padding: 0.5rem 1rem;
+    background-color: rgb(124, 52, 52);
+}
+
+.message-player-14 {
+    max-width: 22rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 20pt;
+    padding: 0.5rem 1rem;
+    background-color: rgb(51, 93, 51);
+}
